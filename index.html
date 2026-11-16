@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ilham Sawalullael (@ikilledfms) — Developer &amp; Bug Bounty Hunter</title>
   <meta name="description" content="Personal portfolio of Ilham Sawalullael, known online as @ikilledfms: bug bounty hunter, builder of small web apps and games, and BNB Chain tooling.">
+  <meta property="og:title" content="Ilham Sawalullael (@ikilledfms) — Developer &amp; Bug Bounty Hunter">
+  <meta property="og:description" content="Bug bounty hunter, builder of small web apps and games, and BNB Chain tooling. 5 XE reports filed, GMX finding confirmed, 166 NFTs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ikilledfms.github.io/">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,8 +20,10 @@
       <a class="brand" href="#">ikilledfms</a>
       <div class="nav-links">
         <a href="#about">About</a>
+        <a href="#findings">Findings</a>
+        <a href="#flagship">Flagship</a>
         <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
+        <a href="#timeline">Timeline</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -22,6 +31,7 @@
       <h1>Ilham Sawalullael</h1>
       <p class="handle">@ikilledfms</p>
       <p class="tagline">Independent developer and bug bounty hunter. I break things to understand them, then build things that last.</p>
+      <p class="stats">5 XE reports &middot; 2 Medium &middot; GMX $10,000 confirmed &middot; 166 NFTs &middot; 122 listed &middot; 0 sold</p>
       <div class="hero-links">
         <a class="btn" href="https://github.com/ikilledfms">GitHub</a>
         <a class="btn" href="https://x.com/ikilledfmsai">X / Twitter</a>
@@ -31,13 +41,62 @@
 
   <main>
     <section id="about">
-      <h2>About</h2>
+      <h2><span class="prompt">$</span> whoami</h2>
       <p>I'm Ilham Sawalullael, known online as <strong>@ikilledfms</strong>. I'm an independent developer and security researcher. Most of my work lives in three places: hunting bugs in web and smart-contract systems, building small web apps and games for coding bounties, and automating things on BNB Chain.</p>
       <p>I like the full loop of security work: read the code, find the flaw, prove it with a working proof of concept, and write it up cleanly. I only report findings that are verified and checked against existing reports.</p>
+      <p class="evidence-rule">Every claim on this page links to evidence you can check — a report ID, a transaction, or a public profile.</p>
+    </section>
+
+    <section id="findings">
+      <h2><span class="prompt">$</span> ls findings/</h2>
+      <p>Verified findings only. Private reports are not exposed until disclosed.</p>
+      <table class="findings-table">
+        <thead>
+          <tr><th>Program</th><th>Finding</th><th>Severity</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>XE</td><td>XE-5203</td><td><span class="sev sev-minor">Minor</span></td><td><span class="badge badge-filed">Filed</span></td></tr>
+          <tr><td>XE</td><td>XE-5368</td><td><span class="sev sev-medium">Medium</span></td><td><span class="badge badge-filed">Filed</span></td></tr>
+          <tr><td>XE</td><td>XE-5493</td><td><span class="sev sev-medium">Medium</span></td><td><span class="badge badge-filed">Filed</span></td></tr>
+          <tr><td>XE</td><td>XE-5653</td><td><span class="sev sev-minor">Minor</span></td><td><span class="badge badge-filed">Filed</span></td></tr>
+          <tr><td>XE</td><td>XE-5786</td><td><span class="sev sev-minor">Minor</span></td><td><span class="badge badge-filed">Filed</span></td></tr>
+          <tr><td>GMX (Immunefi)</td><td>Empty-pool deposit dilution via <code>allowZeroPoolBorrowingFactor</code></td><td><span class="sev sev-medium">Medium &middot; $10,000</span></td><td><span class="badge badge-confirmed">Confirmed &middot; draft ready</span></td></tr>
+          <tr><td>Meta Muse</td><td>Agentic AI security hunt — Pass 1+2 done, candidate D3 under test</td><td><span class="sev sev-na">—</span></td><td><span class="badge badge-progress">In progress</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="flagship">
+      <h2><span class="prompt">$</span> ls flagship/</h2>
+      <div class="cards">
+        <article class="card flagship-card">
+          <p class="flagship-no">№ 01</p>
+          <h3>Cloudbreak</h3>
+          <p><span class="badge badge-submitted">Submitted</span></p>
+          <p>AI-Excited bounty entry on make.fun — a whale breaching a sea of clouds. Result due 2026-12-01.</p>
+        </article>
+        <article class="card flagship-card">
+          <p class="flagship-no">№ 02</p>
+          <h3>EMBERLINE: Foundry Yards</h3>
+          <p><span class="badge badge-progress">Rank 1658 &middot; provisional</span></p>
+          <p>Three.js first-person game for the threejs-fps bounty — bot AI, objective play, HUD. Playable build submitted to make.fun.</p>
+          <div class="shots">
+            <img src="assets/emberline-1.jpg" alt="EMBERLINE start screen" loading="lazy">
+            <img src="assets/emberline-2.jpg" alt="EMBERLINE gameplay" loading="lazy">
+            <img src="assets/emberline-3.jpg" alt="EMBERLINE end screen" loading="lazy">
+          </div>
+        </article>
+        <article class="card flagship-card">
+          <p class="flagship-no">№ 03</p>
+          <h3>AutoTrade EA</h3>
+          <p><span class="badge badge-shipped">Shipped</span></p>
+          <p>MetaTrader 5 expert advisor for XAUUSD — 1,153 lines. Three-candle zones, Fibonacci 50% entries, SMC kill zones. Risk: 1% per trade, 3% max daily loss. Compiles clean; demo validation in progress.</p>
+        </article>
+      </div>
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
+      <h2><span class="prompt">$</span> ~/portfolio</h2>
       <div class="cards">
         <article class="card">
           <h3>Bug Bounty Research</h3>
@@ -58,8 +117,74 @@
       </div>
     </section>
 
+    <section id="timeline">
+      <h2><span class="prompt">$</span> cat research.log</h2>
+      <ul class="timeline">
+        <li><span class="tl-date">2026-11-11</span> <strong>XE bug bounty hunt begins</strong> — 5 reports filed <span class="badge badge-filed">Filed</span></li>
+        <li><span class="tl-date">2026-11-13</span> <strong>GMX Finding #3 confirmed</strong> — Medium, $10,000 flat <span class="badge badge-confirmed">Confirmed</span></li>
+        <li><span class="tl-date">2026-11-16</span> <strong>Cloudbreak submitted</strong> — AI-Excited bounty, make.fun <span class="badge badge-submitted">Submitted</span></li>
+        <li><span class="tl-date">2026-11-16</span> <strong>agency-poem-01 final rank 525</strong> — make.fun <span class="badge badge-rank">Rank 525</span></li>
+        <li><span class="tl-date">2026-11-16</span> <strong>Meta Muse hunt, Pass 1+2</strong> — 0 confirmed, candidate D3 under test <span class="badge badge-progress">In progress</span></li>
+        <li><span class="tl-date">2026-11-16</span> <strong>79-NFT Element reprice done</strong> — 79/79 discount orders posted <span class="badge badge-done">Done</span></li>
+      </ul>
+    </section>
+
+    <section id="achievements">
+      <h2><span class="prompt">$</span> ls achievements/</h2>
+      <ul class="achievements-list">
+        <li>5 XE reports filed — 2 Medium, 3 Minor</li>
+        <li>GMX Finding #3 confirmed — Medium, $10,000 flat</li>
+        <li>19/20 make.fun bounty slots used</li>
+        <li>166 NFTs held — 157 Agentic wallet, 9 Web3 wallet</li>
+        <li>122 NFTs listed on Element — 0 sold yet</li>
+        <li>AutoTrade EA — 1,153 lines, compiles with 0 errors, 0 warnings</li>
+      </ul>
+    </section>
+
+    <section id="writeups">
+      <h2><span class="prompt">$</span> ls writeups/</h2>
+      <ul class="writeups-list">
+        <li><strong>GMX — Empty-pool deposit dilution</strong> — draft ready, writeup on disclosure <span class="badge badge-draft">Draft</span></li>
+        <li><strong>Meta Muse — Agentic AI hunt log</strong> — Pass 1+2, candidate D3 <span class="badge badge-progress">In progress</span></li>
+        <li><strong>XE — Five filed reports</strong> — private until disclosed <span class="badge badge-private">Private</span></li>
+        <li><strong>ARTEX — FBI FLASH-20261113-001 research note</strong> — 2026-11-17 <span class="badge badge-done">Done</span></li>
+      </ul>
+      <p class="privacy-note">Private reports are not exposed until disclosed — only public or disclosed findings are listed here.</p>
+    </section>
+
+    <section id="activity">
+      <h2><span class="prompt">$</span> cat activity.log</h2>
+      <table class="activity-table">
+        <thead>
+          <tr><th>Date</th><th>Item</th><th>Chain</th><th>Address</th><th>Note</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>2026-11-13</td><td>Free-mint batch — 72 NFTs, 66 tx</td><td>BSC</td><td><a href="https://bscscan.com/address/0x8698a7708913cA6823d717bcbFe79f6145eb20f8">0x8698…20f8 ↗</a></td><td>Gas 0.00064 BNB</td></tr>
+          <tr><td>2026-11-15</td><td>pinkbear #1343, #1344 · Forge Pass #725</td><td>BSC</td><td><a href="https://bscscan.com/address/0x157d860e30b6c6d4dc0abe3bd6e66e659a9d524f">0x157d…524f ↗</a></td><td>Manual fires — now listed on Element</td></tr>
+          <tr><td>2026-11-16</td><td>79-NFT reprice, −40%</td><td>Element</td><td><a href="https://element.market/account/0x8698a7708913cA6823d717bcbFe79f6145eb20f8">Storefront ↗</a></td><td>79/79 orders posted</td></tr>
+          <tr><td>2026-11-16</td><td>BNB withdrawal to Bitget</td><td>BSC</td><td><a href="https://bscscan.com/address/0xa2f9aa9e5b26e56cd97757163185b4c6aa690efe">0xa2f9…eefe ↗</a></td><td>0.0023134 BNB</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="spot-the-bug">
+      <h2><span class="prompt">$</span> ./spot-the-bug</h2>
+      <p>A practice snippet — can you spot it before opening the answer?</p>
+      <pre><code>// Spot the bug — practice snippet (not a real finding)
+function withdraw(uint amount) external {
+    require(balances[msg.sender] &gt;= amount, "insufficient");
+    (bool ok, ) = msg.sender.call{value: amount}("");
+    require(ok, "transfer failed");
+    balances[msg.sender] -= amount;
+}</code></pre>
+      <details>
+        <summary>Reveal the bug</summary>
+        <p>The balance is updated <em>after</em> the external call — a malicious receiver can re-enter <code>withdraw()</code> and drain the contract. Fix: update state before the call (checks-effects-interactions) or use a reentrancy guard.</p>
+      </details>
+    </section>
+
     <section id="skills">
-      <h2>Skills &amp; Tools</h2>
+      <h2><span class="prompt">$</span> ls skills/</h2>
       <ul class="tags">
         <li>JavaScript</li>
         <li>Python</li>
@@ -73,18 +198,18 @@
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
+      <h2><span class="prompt">$</span> ping ikilledfms</h2>
       <p>The fastest way to reach me is on X or Discord.</p>
-      <ul class="contact-list">
-        <li>GitHub — <a href="https://github.com/ikilledfms">github.com/ikilledfms</a></li>
-        <li>X / Twitter — <a href="https://x.com/ikilledfmsai">@ikilledfmsai</a></li>
-        <li>Discord — @ikilledfms</li>
-      </ul>
+      <div class="contact-badges">
+        <a class="contact-badge" href="https://github.com/ikilledfms">GitHub</a>
+        <a class="contact-badge" href="https://x.com/ikilledfmsai">X · @ikilledfmsai</a>
+        <span class="contact-badge">Discord · @ikilledfms</span>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Ilham Sawalullael (@ikilledfms). A personal, non-commercial site. Built with plain HTML &amp; CSS, hosted on GitHub Pages.</p>
+    <p>© 2026 Ilham Sawalullael (@ikilledfms). A personal, non-commercial site. Built with plain HTML &amp; CSS, hosted on GitHub Pages. No trackers. <a href="https://github.com/ikilledfms/ikilledfms.github.io">Source</a></p>
   </footer>
 </body>
 </html>
