@@ -55,11 +55,12 @@
           <tr><th>Program</th><th>Finding</th><th>Severity</th><th>Status</th></tr>
         </thead>
         <tbody>
-          <tr><td>XE</td><td>XE-5203</td><td><span class="sev sev-minor">Minor</span></td><td><span class="badge badge-filed">Filed</span></td></tr>
-          <tr><td>XE</td><td>XE-5368</td><td><span class="sev sev-medium">Medium</span></td><td><span class="badge badge-filed">Filed</span></td></tr>
-          <tr><td>XE</td><td>XE-5493</td><td><span class="sev sev-medium">Medium</span></td><td><span class="badge badge-filed">Filed</span></td></tr>
-          <tr><td>XE</td><td>XE-5653</td><td><span class="sev sev-minor">Minor</span></td><td><span class="badge badge-filed">Filed</span></td></tr>
-          <tr><td>XE</td><td>XE-5786</td><td><span class="sev sev-minor">Minor</span></td><td><span class="badge badge-filed">Filed</span></td></tr>
+          <tr><td>XE</td><td>XE-5203</td><td><span class="sev sev-minor">Minor</span></td><td><span class="badge badge-progress">Triaging</span></td></tr>
+          <tr><td>XE</td><td>XE-5368</td><td><span class="sev sev-medium">Medium</span></td><td><span class="badge badge-private">Invalid</span></td></tr>
+          <tr><td>XE</td><td>XE-5493</td><td><span class="sev sev-medium">Medium</span></td><td><span class="badge badge-private">Duplicate</span></td></tr>
+          <tr><td>XE</td><td>XE-5653</td><td><span class="sev sev-minor">Minor</span></td><td><span class="badge badge-private">Duplicate</span></td></tr>
+          <tr><td>XE</td><td>XE-5786</td><td><span class="sev sev-minor">Minor</span></td><td><span class="badge badge-progress">Triaging</span></td></tr>
+          <tr><td>XE</td><td>XE-18251 (re-file of XE-5493)</td><td><span class="sev sev-medium">Medium</span></td><td><span class="badge badge-filed">Filed</span></td></tr>
           <tr><td>GMX (Immunefi)</td><td>Empty-pool deposit dilution via <code>allowZeroPoolBorrowingFactor</code></td><td><span class="sev sev-medium">Medium &middot; $10,000</span></td><td><span class="badge badge-confirmed">Confirmed &middot; draft ready</span></td></tr>
           <tr><td>Meta Muse</td><td>Agentic AI security hunt — Pass 1+2 done, candidate D3 under test</td><td><span class="sev sev-na">—</span></td><td><span class="badge badge-progress">In progress</span></td></tr>
         </tbody>
@@ -90,7 +91,7 @@
           <p class="flagship-no">№ 03</p>
           <h3>AutoTrade EA</h3>
           <p><span class="badge badge-shipped">Shipped</span></p>
-          <p>MetaTrader 5 expert advisor for XAUUSD — 1,153 lines. Three-candle zones, Fibonacci 50% entries, SMC kill zones. Risk: 1% per trade, 3% max daily loss. Compiles clean; demo validation in progress.</p>
+          <p>MetaTrader 5 expert advisor for XAUUSD — 1,153 lines. Three-candle zones, Fibonacci 50% entries, SMC kill zones. Risk: 1% per trade, 3% max daily loss. Compiles clean (0 errors, 0 warnings); backtesting on GitHub Actions (MT5 Strategy Tester, H1 XAUUSD, demo $100) — no trade metrics yet.</p>
         </article>
       </div>
     </section>
@@ -112,7 +113,7 @@
         </article>
         <article class="card">
           <h3>AutoTrade — MT5 Expert Advisor</h3>
-          <p>A MetaTrader 5 expert advisor for XAUUSD combining three-candle zones, Fibonacci 50% entries, and SMC kill zones, with strict risk rules: 1% risk per trade, 3% max daily loss, trailing to breakeven. Built and compile-tested; demo validation in progress.</p>
+          <p>A MetaTrader 5 expert advisor for XAUUSD combining three-candle zones, Fibonacci 50% entries, and SMC kill zones, with strict risk rules: 1% risk per trade, 3% max daily loss, trailing to breakeven. Built and compile-tested; backtesting on GitHub Actions — demo validation in progress, no trade metrics yet (run #4 failed at the history-sync step, 18 Nov).</p>
         </article>
       </div>
     </section>
@@ -126,18 +127,20 @@
         <li><span class="tl-date">2026-11-16</span> <strong>agency-poem-01 final rank 525</strong> — make.fun <span class="badge badge-rank">Rank 525</span></li>
         <li><span class="tl-date">2026-11-16</span> <strong>Meta Muse hunt, Pass 1+2</strong> — 0 confirmed, candidate D3 under test <span class="badge badge-progress">In progress</span></li>
         <li><span class="tl-date">2026-11-16</span> <strong>79-NFT Element reprice done</strong> — 79/79 discount orders posted <span class="badge badge-done">Done</span></li>
+        <li><span class="tl-date">2026-11-18</span> <strong>XE verdicts read</strong> — 2 triaging, 2 duplicate, 1 invalid; XE-5493 re-filed as XE-18251 <span class="badge badge-progress">In progress</span></li>
+        <li><span class="tl-date">2026-11-18</span> <strong>AutoTrade backtest, GitHub Actions</strong> — EA compiles clean; run #3 returned 0 trades (no price history), run #4 failed at the history-sync step <span class="badge badge-progress">In progress</span></li>
       </ul>
     </section>
 
     <section id="achievements">
       <h2><span class="prompt">$</span> ls achievements/</h2>
       <ul class="achievements-list">
-        <li>5 XE reports filed — 2 Medium, 3 Minor</li>
+        <li>5 XE reports filed — 2 Medium, 3 Minor; 2 triaging, 2 duplicate, 1 invalid; XE-18251 re-filed</li>
         <li>GMX Finding #3 confirmed — Medium, $10,000 flat</li>
         <li>19/20 make.fun bounty slots used</li>
         <li>166 NFTs held — 157 Agentic wallet, 9 Web3 wallet</li>
         <li>122 NFTs listed on Element — 0 sold yet</li>
-        <li>AutoTrade EA — 1,153 lines, compiles with 0 errors, 0 warnings</li>
+        <li>AutoTrade EA — 1,153 lines, compiles with 0 errors, 0 warnings; backtesting on GitHub Actions, no metrics yet</li>
       </ul>
     </section>
 
@@ -146,7 +149,7 @@
       <ul class="writeups-list">
         <li><strong>GMX — Empty-pool deposit dilution</strong> — draft ready, writeup on disclosure <span class="badge badge-draft">Draft</span></li>
         <li><strong>Meta Muse — Agentic AI hunt log</strong> — Pass 1+2, candidate D3 <span class="badge badge-progress">In progress</span></li>
-        <li><strong>XE — Five filed reports</strong> — private until disclosed <span class="badge badge-private">Private</span></li>
+        <li><strong>XE — Six filed reports</strong> — private until disclosed <span class="badge badge-private">Private</span></li>
         <li><strong>ARTEX — FBI FLASH-20261113-001 research note</strong> — 2026-11-17 <span class="badge badge-done">Done</span></li>
       </ul>
       <p class="privacy-note">Private reports are not exposed until disclosed — only public or disclosed findings are listed here.</p>
