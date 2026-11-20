@@ -41,7 +41,20 @@ nav {
 .hero {
   max-width: 960px;
   margin: 48px auto 0;
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
 }
+
+.hero-photo {
+  width: 200px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid #30363d;
+  display: block;
+}
+
+.hero-text { min-width: 0; }
 
 .hero h1 {
   font-size: 3rem;
@@ -139,6 +152,8 @@ footer {
 @media (max-width: 600px) {
   .hero h1 { font-size: 2.2rem; }
   .nav-links a { margin-left: 12px; }
+  .hero { flex-direction: column; gap: 20px; }
+  .hero-photo { width: 160px; }
 }
 
 /* --- Portfolio v2 additions --- */
